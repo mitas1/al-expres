@@ -6,9 +6,9 @@ export default function Home() {
       <Image
         src="/truck-1.jpeg"
         alt="Truck"
-        layout="fill"
+        fill
         priority
-        objectFit="cover"
+        className="object-cover"
       />
     </section>
   );

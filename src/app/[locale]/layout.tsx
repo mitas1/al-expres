@@ -1,11 +1,16 @@
-import { Inter } from 'next/font/google';
+import { Exo_2 } from 'next/font/google';
 import '../globals.css';
 import { FC, PropsWithChildren } from 'react';
-import { LOCALES, Locale } from '@/i18n';
+import { I18nConfig, Locale } from '@/i18n';
 import { getTranslations, unstable_setRequestLocale } from 'next-intl/server';
-import { Header } from '@/components/header/Header';
+import { Header } from '@/components/common/header/Header';
 
-const inter = Inter({ subsets: ['latin'] });
+const exo2 = Exo_2({
+  subsets: ['latin'],
+  display: 'swap',
+  weight: ['300', '700'],
+  variable: '--font-exo',
+});
 
 interface PageParams {
   params: { locale: Locale };
@@ -28,7 +33,7 @@ const RootLayout: FC<PropsWithChildren<PageParams>> = ({
 
   return (
     <html lang={locale}>
-      <body className={inter.className}>
+      <body className={exo2.className}>
         <Header />
         <main>{children}</main>
       </body>
@@ -38,4 +43,5 @@ const RootLayout: FC<PropsWithChildren<PageParams>> = ({
 
 export default RootLayout;
 
-export const generateStaticParams = () => LOCALES.map((locale) => ({ locale }));
+export const generateStaticParams = () =>
+  I18nConfig.locales.map((locale) => ({ locale }));

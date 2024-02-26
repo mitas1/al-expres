@@ -1,19 +1,23 @@
 import { notFound } from 'next/navigation';
 import { getRequestConfig } from 'next-intl/server';
 
-export const LOCALES = ['sk', 'en'] as const;
-export const DEFAULT_LOCALE = LOCALES[0];
+export const I18nConfig = {
+  locales: ['sk', 'en'],
+  defaultLocale: 'sk',
+  localePrefix: 'as-needed',
+} as const;
 
-const localeExists = (locale: string) => (LOCALES as ReadonlyArray<string>).includes(locale);
+const localeExists = (locale: string) =>
+  (I18nConfig.locales as ReadonlyArray<string>).includes(locale);
 
-export type Locale = typeof LOCALES[number];
+export type Locale = (typeof I18nConfig.locales)[number];
 
 export default getRequestConfig(async ({ locale }) => {
   if (!localeExists(locale)) {
     notFound();
-  };
+  }
 
   return {
-    messages: (await import(`../messages/${locale}.json`)).default
+    messages: (await import(`../messages/${locale}.json`)).default,
   };
 });

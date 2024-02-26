@@ -1,10 +1,47 @@
 {
   "Index": {
-    "title": "Ahoj svet!"
+    "title": "Ponúkame prepravu v rámci celej európy"
   },
   "Metadata": {
     "title": "AL expres",
     "description": "Ponúkame prepravu v rámci celej európy"
+  },
+  "SemitrailerTypes": {
+    "title": "Semitrailer types",
+    "frigo": {
+      "title": "Frigo Semitrailers",
+      "paragraph1": "WE OFFER FRIGO SEMITRAILERS WITH TEMPERATURE CONTROL (IN THE RANGE OF -30°C TO +30°C) for the transport of any temperature-sensitive goods.",
+      "paragraph2": "Our frigo semitrailers guarantee that your goods will be kept at an appropriate temperature throughout the transport. Semitrailers include palette baskets (palette exchange possible). It is obvious to us, to produce the record of the history of temperatures from the vehicle thermograph.",
+      "params": {
+        "type": {
+          "label": "Type",
+          "value": "Frigo, temperature control (in the range of -30°C to +30°C)"
+        },
+        "load": {
+          "label": "Load",
+          "value": "22.5 t"
+        },
+        "volume": {
+          "label": "Volume",
+          "value": "86.35 m3"
+        },
+        "dimensions": {
+          "label": "Dimmensions",
+          "value": "13.6 x 2.48 x 2.7 m"
+        },
+        "palettes": {
+          "label": "Palettes",
+          "value": "33 pcs"
+        },
+        "gps": {
+          "label": "GPS monitoring",
+          "value": "yes"
+        },
+        "frc": {
+          "label": "FRC certification",
+          "value": "yes"
+        }
+      }
+    }
   }
 }
-

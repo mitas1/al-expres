@@ -1,12 +1,8 @@
 import createMiddleware from 'next-intl/middleware';
-import { DEFAULT_LOCALE, LOCALES } from './i18n';
+import { I18nConfig } from './i18n';
 
-export default createMiddleware({
-  locales: LOCALES,
-  defaultLocale: DEFAULT_LOCALE,
-  localePrefix: 'as-needed' // Do not include locale prefix for the default locale
-});
+export default createMiddleware(I18nConfig);
 
 export const config = {
-  matcher: ['/', `/(sk|en)/:path*`] // Can't contain a dynamic expression: https://nextjs.org/docs/messages/invalid-page-config
+  matcher: ['/', `/(sk|en)/:path*`], // Can't contain a dynamic expression: https://nextjs.org/docs/messages/invalid-page-config
 };

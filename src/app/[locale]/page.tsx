@@ -1,15 +1,11 @@
-import Image from 'next/image';
+import { HeroBanner } from '@/components/index/HeroBanner';
+import { SemitrailerTypes } from '@/components/index/SemitrailerTypes';
 
-export default function Home() {
-  return (
-    <section className="w-full relative h-[700px]">
-      <Image
-        src="/truck-1.jpeg"
-        alt="Truck"
-        fill
-        priority
-        className="object-cover"
-      />
-    </section>
-  );
-}
+const Home = () => (
+  <>
+    <HeroBanner />
+    <SemitrailerTypes />
+  </>
+);
+
+export default Home;

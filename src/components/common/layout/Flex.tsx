@@ -11,7 +11,7 @@ export const Flex: FC<PropsWithChildren<FlexProps>> = ({
 }) => (
   <div
     className={classNames(
-      'flex flex-col md:flex-row justify-between items-center gap-14 p-8',
+      'flex flex-col md:flex-row justify-between items-center md:items-start gap-14 p-8',
       className,
     )}
   >

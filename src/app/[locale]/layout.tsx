@@ -12,7 +12,7 @@ const exo2 = Exo_2({
   variable: '--font-exo',
 });
 
-interface PageParams {
+export interface PageParams {
   params: { locale: Locale };
 }
 

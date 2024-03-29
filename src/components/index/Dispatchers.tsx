@@ -14,7 +14,10 @@ export const Dispatchers = () => {
   const t = useTranslations(TRANS_NAMESPACE);
   const messages = useMessages();
   return (
-    <Section heading={tCommon('dispatchers')} className="bg-white">
+    <Section
+      heading={tCommon.rich('dispatchers', { br: () => <br /> })}
+      className="bg-white"
+    >
       <Flex>
         {(Object.keys(messages[TRANS_NAMESPACE]) as Dispatchers[]).map(
           (transKey) => {
@@ -25,11 +28,13 @@ export const Dispatchers = () => {
                 key={email}
                 className="flex-1 flex items-center flex-col justify-center text-center gap-4"
               >
-                <CircleIcon className='border-accent'>
+                <CircleIcon className="border-accent">
                   <PhoneIcon />
                 </CircleIcon>
                 <div>
-                  <h2 className="text-3xl text-accent">{t(`${transKey}.name`)}</h2>
+                  <h2 className="text-3xl text-accent">
+                    {t(`${transKey}.name`)}
+                  </h2>
                   <span>{t(`${transKey}.position`)}</span>
                 </div>
                 <dl>

@@ -1,5 +1,5 @@
 import { useTranslations } from 'next-intl';
-import { FC, PropsWithChildren } from 'react';
+import { FC, PropsWithChildren, ReactNode } from 'react';
 import { DescriptionList } from '../common/description-list/DescriptionList';
 import { Section } from '../common/layout/Section';
 import { Flex } from '../common/layout/Flex';
@@ -20,8 +20,11 @@ const Link: FC<PropsWithChildren> = ({ children }) => (
   </a>
 );
 
-const Column: FC<PropsWithChildren> = ({ icon, children }) => (
-  <div className="flex flex-col md:flex-row items-center md:items-start">
+const Column: FC<PropsWithChildren & { icon: ReactNode }> = ({
+  icon,
+  children,
+}) => (
+  <div className="flex-1 flex flex-col md:flex-row items-center md:items-start">
     <div className="m-8">
       <CircleIcon className="border-accent p-6">{icon}</CircleIcon>
     </div>
@@ -41,12 +44,12 @@ export const SemitrailerTypes = () => {
           <H2>{t('frigo.title')}</H2>
           <Paragraph>
             {t.rich('frigo.paragraph1', {
-              b: (chunks) => <strong>{chunks}</strong>,
+              bold: (chunks) => <strong>{chunks}</strong>,
             })}
           </Paragraph>
           <Paragraph>
             {t.rich('frigo.paragraph2', {
-              b: (chunks) => <strong>{chunks}</strong>,
+              bold: (chunks) => <strong>{chunks}</strong>,
             })}
           </Paragraph>
           <DescriptionList
@@ -68,28 +71,29 @@ export const SemitrailerTypes = () => {
           <Link />
         </Column>
         <Column icon={<Tent width="50px" className="text-gray-500" />}>
-          <H2>{t('frigo.title')}</H2>
+          <H2>{t('tent.title')}</H2>
           <Paragraph>
-            {t.rich('frigo.paragraph1', {
-              b: (chunks) => <strong>{chunks}</strong>,
+            {t.rich('tent.paragraph1', {
+              bold: (chunks) => <strong>{chunks}</strong>,
             })}
           </Paragraph>
           <Paragraph>
-            {t.rich('frigo.paragraph2', {
-              b: (chunks) => <strong>{chunks}</strong>,
+            {t.rich('tent.paragraph2', {
+              bold: (chunks) => <strong>{chunks}</strong>,
             })}
           </Paragraph>
           <DescriptionList
             groups={(
               [
-                ['type', 'load', 'volume'],
-                ['dimensions', 'palettes'],
-                ['gps', 'frc'],
+                ['type', 'load'],
+                ['volume', 'dimensions'],
+                ['palettes', 'gps'],
+                ['xlCode', 'multiLock'],
               ] as const
             ).map((group) =>
               group.map((key) => [
-                t(`frigo.params.${key}.label`),
-                t.rich(`frigo.params.${key}.value`, {
+                t(`tent.params.${key}.label`),
+                t.rich(`tent.params.${key}.value`, {
                   sup: (chunks) => <sup>{chunks}</sup>,
                 }),
               ]),

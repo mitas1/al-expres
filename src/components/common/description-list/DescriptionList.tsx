@@ -5,12 +5,12 @@ interface DescriptionListProps {
 }
 
 export const DescriptionList: FC<DescriptionListProps> = ({ groups }) => (
-  <dl className="my-4 text-left text-sm font-light leading-loose">
+  <dl className="my-4 text-center md:text-left text-sm font-light leading-loose">
     {groups.map((group) => (
       <>
         {group.map(([key, value]) => {
           return (
-            <div key={key} className="inline">
+            <div key={key} className="inline text-xs">
               <dt className="inline after:content-[':'] after:mr-1 uppercase font-bold">
                 {key}
               </dt>

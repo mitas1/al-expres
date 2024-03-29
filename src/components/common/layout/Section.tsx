@@ -1,9 +1,9 @@
 import classNames from 'classnames';
-import { FC, PropsWithChildren } from 'react';
+import { FC, PropsWithChildren, ReactNode } from 'react';
 import { H1 } from '../text/H1';
 
 interface SectionProps {
-  heading: string;
+  heading: ReactNode;
   className?: string;
 }
 

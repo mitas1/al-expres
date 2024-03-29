@@ -1,5 +1,6 @@
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
+import { H1 } from '../common/text/H1';
 
 export const HighwayHeroBanner = () => {
   const t = useTranslations('HighwayHeroBanner');
@@ -13,11 +14,11 @@ export const HighwayHeroBanner = () => {
         className="object-cover"
       />
       <div className="z-20 p-10 text-center text-white">
-        <h1 className="text-5xl md:max-w-xl uppercase my-6">
+        <H1 className="md:max-w-xl my-6">
           {t.rich('title', {
             accent: (chunks) => <span className="text-accent">{chunks}</span>,
           })}
-        </h1>
+        </H1>
         <span className=" my-6">{t('footnote')}</span>
       </div>
     </section>

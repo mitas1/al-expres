@@ -1,5 +1,6 @@
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
+import { H1 } from '../common/text/H1';
 
 export const TruckHeroBanner = () => {
   const t = useTranslations('TruckHeroBanner');
@@ -13,7 +14,7 @@ export const TruckHeroBanner = () => {
         className="object-cover"
       />
       <div className="z-20 max-w-6xl w-full p-10">
-        <h1 className="text-5xl text-white md:max-w-sm">{t('title')}</h1>
+        <H1 className="text-white md:max-w-sm">{t('title')}</H1>
         <a
           href="#id"
           className="bg-black mt-8 inline-block text-white py-4 px-8 rounded hover:bg-white hover:text-black"

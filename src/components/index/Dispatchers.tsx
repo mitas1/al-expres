@@ -2,6 +2,9 @@ import { useMessages, useTranslations } from 'next-intl';
 import { Section } from '../common/layout/Section';
 import { Flex } from '../common/layout/Flex';
 
+import PhoneIcon from '@/images/phone.svg';
+import { CircleIcon } from '../common/CircleIcon';
+
 const TRANS_NAMESPACE = 'Dispatchers' as const;
 
 type Dispatchers = keyof IntlMessages[typeof TRANS_NAMESPACE];
@@ -22,9 +25,11 @@ export const Dispatchers = () => {
                 key={email}
                 className="flex-1 flex items-center flex-col justify-center text-center gap-4"
               >
-                <p>Icon</p>
+                <CircleIcon className='border-accent'>
+                  <PhoneIcon />
+                </CircleIcon>
                 <div>
-                  <h2 className="text-3xl">{t(`${transKey}.name`)}</h2>
+                  <h2 className="text-3xl text-accent">{t(`${transKey}.name`)}</h2>
                   <span>{t(`${transKey}.position`)}</span>
                 </div>
                 <dl>

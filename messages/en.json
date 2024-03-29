@@ -72,6 +72,23 @@
     "title": "Some of our customers"
   },
   "Contact": {
-    "title": "Contact us"
+    "title": "Contact us",
+    "company": {
+      "label": "AL expres s.r.o.",
+      "value": "Koperníkova 14, 82104<br></br>Bratislava, Slovakia"
+    },
+    "ico": {
+      "label": "VAT number",
+      "value": "44 372 078"
+    },
+    "email": {
+      "label": "E-mail",
+      "value": "al-expres@al-expres.sk"
+    },
+    "phone": {
+      "label": "Phone number",
+      "value": "+421 911 110 931"
+    },
+    "copyright": "© {year} Al expres s.r.o. / All rights reserved / designed by Matus Mitas"
   }
 }

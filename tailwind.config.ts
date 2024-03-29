@@ -10,6 +10,7 @@ const config: Config = {
     extend: {
       colors: {
         accent: '#E40000',
+        'accent-dark': '#5e0000',
       },
       fontFamily: {
         sans: ['var(--font-exo)'],

@@ -8,16 +8,18 @@ import MeggleLogo from '@/images/meggle.svg';
 import RajoLogo from '@/images/rajo.svg';
 import VolkswagenLogo from '@/images/volkswagen.svg';
 
+const commonProps = { className: 'max-w-40 w-full' };
+
 export const Customers = () => {
   const t = useTranslations('Customers');
   return (
-    <Section heading={t('title')} className="bg-accent">
+    <Section heading={t('title')} className="bg-accent text-accent-dark">
       <Flex>
-        <SamsungLogo width="100%" className="max-w-40" />
-        <ZottLogo width="100%" className="max-w-40" />
-        <MeggleLogo width="100%" className="max-w-40" />
-        <RajoLogo width="100%" className="max-w-40" />
-        <VolkswagenLogo width="100%" className="max-w-40" />
+        <SamsungLogo {...commonProps} />
+        <ZottLogo {...commonProps} />
+        <MeggleLogo {...commonProps} />
+        <RajoLogo {...commonProps} />
+        <VolkswagenLogo {...commonProps} />
       </Flex>
     </Section>
   );

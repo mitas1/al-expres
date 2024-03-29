@@ -1,21 +1,27 @@
 {
-  "Index": {
-    "title": "Ponúkame prepravu v rámci celej európy"
-  },
   "Metadata": {
     "title": "AL expres",
-    "description": "Ponúkame prepravu v rámci celej európy"
+    "description": "We offer transport all over Europe"
+  },
+  "Common": {
+    "dispatchers": "Place your trust in us!<br></br>Contact one of our dispatchers.",
+    "email": "Email",
+    "phone": "Phone"
+  },
+  "TruckHeroBanner": {
+    "title": "Transport all over Europe - Affordable and Reliable",
+    "contactLink": "Contact our Dispatchers"
   },
   "SemitrailerTypes": {
-    "title": "Semitrailer types",
+    "title": "Semi-trailer types",
     "frigo": {
-      "title": "Frigo Semitrailers",
-      "paragraph1": "WE OFFER FRIGO SEMITRAILERS WITH TEMPERATURE CONTROL (IN THE RANGE OF -30°C TO +30°C) for the transport of any temperature-sensitive goods.",
-      "paragraph2": "Our frigo semitrailers guarantee that your goods will be kept at an appropriate temperature throughout the transport. Semitrailers include palette baskets (palette exchange possible). It is obvious to us, to produce the record of the history of temperatures from the vehicle thermograph.",
+      "title": "Frigo Semi-trailers",
+      "paragraph1": "<bold>WE OFFER FRIGO SEMI-TRAILERS WITH TEMPERATURE CONTROL</bold> (IN THE RANGE -30°C TO +30°C) for the transport of any temperature-sensitive goods.",
+      "paragraph2": "<bold>Guarantee Freshness Across Europe:</bold> Our temperature-controlled frigo semi-trailers keep your goods at optimal conditions throughout their journey. Equipped with pallet baskets for easy loading and unloading, we ensure seamless transport with complete temperature monitoring via our vehicle thermographs.",
       "params": {
         "type": {
           "label": "Type",
-          "value": "Frigo, temperature control (in the range of -30°C to +30°C)"
+          "value": "Frigo, temperature control (in the range -30°C to +30°C)"
         },
         "load": {
           "label": "Load",
@@ -23,11 +29,11 @@
         },
         "volume": {
           "label": "Volume",
-          "value": "86.35 m3"
+          "value": "86.35 m<sup>3</sup>"
         },
         "dimensions": {
-          "label": "Dimmensions",
-          "value": "13.6 x 2.48 x 2.7 m"
+          "label": "Dimensions",
+          "value": "13.6 × 2.48 × 2.7 m"
         },
         "palettes": {
           "label": "Palettes",
@@ -42,6 +48,86 @@
           "value": "yes"
         }
       }
+    },
+    "tent": {
+      "title": "Tent Semi-trailers",
+      "paragraph1": "<bold>WE OFFER TENT SEMITRAILERS WHICH MEET THE HIGHEST STANDARD IN THE SEGMENT</bold> of the security, safety of goods and quality.",
+      "paragraph2": "Our tent semitrailers are equipped with a triangular folding canvas, Multi-lock System / tents with XL code. Goods can be loaded from three sides - from the top, side and rear. We can send your goods to all European countries.",
+      "params": {
+        "type": {
+          "label": "Type",
+          "value": "Tent Semitrailer"
+        },
+        "load": {
+          "label": "Load",
+          "value": "24.0 t"
+        },
+        "volume": {
+          "label": "Volume",
+          "value": "92.75 m<sup>3</sup>"
+        },
+        "dimensions": {
+          "label": "Dimensions",
+          "value": "1360 × 248 × 275 cm"
+        },
+        "palettes": {
+          "label": "Palettes",
+          "value": "34 pcs"
+        },
+        "gps": {
+          "label": "GPS monitoring",
+          "value": "yes"
+        },
+        "xlCode": {
+          "label": "XL code",
+          "value": "yes"
+        },
+        "multiLock": {
+          "label": "Multi-lock system",
+          "value": "yes"
+        }
+      }
     }
+  },
+  "HighwayHeroBanner": {
+    "title": "<accent>Your good</accent> will be safely delivered almost everywhere*",
+    "footnote": "*countries all over the Europe and Switzerland"
+  },
+  "Dispatchers": {
+    "kristofik": {
+      "name": "Roman Kristofik",
+      "position": "Logistics Manager",
+      "email": "roman.kristofik@al-expres.sk",
+      "phone": "+421 911 110 931"
+    },
+    "blanar": {
+      "name": "Peter Blanar",
+      "position": "Dispatcher",
+      "email": "blanar.peter@al-expres.sk",
+      "phone": "+421 903 208 359"
+    }
+  },
+  "Customers": {
+    "title": "Some of our customers"
+  },
+  "Contact": {
+    "title": "Contact us",
+    "company": {
+      "label": "AL expres s.r.o.",
+      "value": "Koperníkova 14, 82104<br></br>Bratislava, Slovakia"
+    },
+    "ico": {
+      "label": "VAT number",
+      "value": "44 372 078"
+    },
+    "email": {
+      "label": "E-mail",
+      "value": "transport@al-expres.sk"
+    },
+    "phone": {
+      "label": "Phone number",
+      "value": "+421 911 110 931"
+    },
+    "copyright": "© {year} Al expres s.r.o. / All rights reserved / designed by Matus Mitas"
   }
 }

@@ -1,7 +1,8 @@
 import { useTranslations } from 'next-intl';
 import { FC, PropsWithChildren } from 'react';
 import { DescriptionList } from '../common/description-list/DescriptionList';
-
+import { Section } from '../common/layout/Section';
+import { Flex } from '../common/layout/Flex';
 
 const Paragraph: FC<PropsWithChildren> = ({ children }) => <p>{children}</p>;
 const H2: FC<PropsWithChildren> = ({ children }) => (
@@ -27,60 +28,69 @@ export const SemitrailerTypes = () => {
   const t = useTranslations('SemitrailerTypes');
 
   return (
-    <section className="bg-white overflow-hidden p-4">
-      <div className="max-w-6xl w-full m-auto">
-        <h1 className="text-center my-24 text-4xl uppercase">{t('title')}</h1>
-        <div className="md:flex">
-          <Column>
-            <H2>{t('frigo.title')}</H2>
-            <Paragraph>
-              {t.rich('frigo.paragraph1', {
-                b: (chunks) => <strong>{chunks}</strong>,
-              })}
-            </Paragraph>
-            <Paragraph>{t('frigo.paragraph2')}</Paragraph>
-            <DescriptionList
-              groups={[
+    <Section heading={t('title')} className="bg-white">
+      <Flex>
+        <Column>
+          <H2>{t('frigo.title')}</H2>
+          <Paragraph>
+            {t.rich('frigo.paragraph1', {
+              b: (chunks) => <strong>{chunks}</strong>,
+            })}
+          </Paragraph>
+          <Paragraph>
+            {t.rich('frigo.paragraph2', {
+              b: (chunks) => <strong>{chunks}</strong>,
+            })}
+          </Paragraph>
+          <DescriptionList
+            groups={(
+              [
                 ['type', 'load', 'volume'],
                 ['dimensions', 'palettes'],
                 ['gps', 'frc'],
-              ].map((group) =>
-                group.map((key) => [
-                  t(`frigo.params.${key}.label`),
-                  t.rich(`frigo.params.${key}.value`, {
-                    sup: (chunks) => <sup>{chunks}</sup>,
-                  }),
-                ]),
-              )}
-            />
-            <Link />
-          </Column>
-          <Column>
-            <H2>{t('frigo.title')}</H2>
-            <Paragraph>
-              {t.rich('frigo.paragraph1', {
-                b: (chunks) => <strong>{chunks}</strong>,
-              })}
-            </Paragraph>
-            <Paragraph>{t('frigo.paragraph2')}</Paragraph>
-            <DescriptionList
-              groups={[
+              ] as const
+            ).map((group) =>
+              group.map((key) => [
+                t(`frigo.params.${key}.label`),
+                t.rich(`frigo.params.${key}.value`, {
+                  sup: (chunks) => <sup>{chunks}</sup>,
+                }),
+              ]),
+            )}
+          />
+          <Link />
+        </Column>
+        <Column>
+          <H2>{t('frigo.title')}</H2>
+          <Paragraph>
+            {t.rich('frigo.paragraph1', {
+              b: (chunks) => <strong>{chunks}</strong>,
+            })}
+          </Paragraph>
+          <Paragraph>
+            {t.rich('frigo.paragraph2', {
+              b: (chunks) => <strong>{chunks}</strong>,
+            })}
+          </Paragraph>
+          <DescriptionList
+            groups={(
+              [
                 ['type', 'load', 'volume'],
                 ['dimensions', 'palettes'],
                 ['gps', 'frc'],
-              ].map((group) =>
-                group.map((key) => [
-                  t(`frigo.params.${key}.label`),
-                  t.rich(`frigo.params.${key}.value`, {
-                    sup: (chunks) => <sup>{chunks}</sup>,
-                  }),
-                ]),
-              )}
-            />
-            <Link />
-          </Column>
-        </div>
-      </div>
-    </section>
+              ] as const
+            ).map((group) =>
+              group.map((key) => [
+                t(`frigo.params.${key}.label`),
+                t.rich(`frigo.params.${key}.value`, {
+                  sup: (chunks) => <sup>{chunks}</sup>,
+                }),
+              ]),
+            )}
+          />
+          <Link />
+        </Column>
+      </Flex>
+    </Section>
   );
 };

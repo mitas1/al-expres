@@ -1,24 +1,27 @@
 {
   "Metadata": {
     "title": "AL expres",
-    "description": "We offer transport all over the Europe"
+    "description": "We offer transport all over Europe"
   },
-  "Index": {
-    "title": "We offer transport all over the Europe"
+  "Common": {
+    "dispatchers": "Dispatchers",
+    "email": "Email",
+    "phone": "Phone"
   },
-  "HeroBanner": {
-    "title": "We offer transport all over the Europe"
+  "TruckHeroBanner": {
+    "title": "Transport all over Europe - Affordable and Reliable",
+    "contactLink": "Contact our Dispatchers"
   },
   "SemitrailerTypes": {
-    "title": "Semitrailer types",
+    "title": "Semi-trailer types",
     "frigo": {
-      "title": "Frigo Semitrailers",
-      "paragraph1": "<b>WE OFFER FRIGO SEMITRAILERS WITH TEMPERATURE CONTROL</b> (IN THE RANGE OF -30°C TO +30°C) for the transport of any temperature-sensitive goods.",
-      "paragraph2": "Our frigo semitrailers guarantee that your goods will be kept at an appropriate temperature throughout the transport. Semitrailers include palette baskets (palette exchange possible). It is obvious to us, to produce the record of the history of temperatures from the vehicle thermograph.",
+      "title": "Frigo Semi-trailers",
+      "paragraph1": "<b>WE OFFER FRIGO SEMI-TRAILERS WITH TEMPERATURE CONTROL</b> (IN THE RANGE -30°C TO +30°C) for the transport of any temperature-sensitive goods.",
+      "paragraph2": "<b>Guarantee Freshness Across Europe:</b> Our temperature-controlled frigo semi-trailers keep your goods at optimal conditions throughout their journey. Equipped with pallet baskets for easy loading and unloading, we ensure seamless transport with complete temperature monitoring via our vehicle thermographs.",
       "params": {
         "type": {
           "label": "Type",
-          "value": "Frigo, temperature control (in the range of -30°C to +30°C)"
+          "value": "Frigo, temperature control (in the range -30°C to +30°C)"
         },
         "load": {
           "label": "Load",
@@ -46,5 +49,29 @@
         }
       }
     }
+  },
+  "HighwayHeroBanner": {
+    "title": "<accent>Your good</accent> will be safely delivered almost everywhere*",
+    "footnote": "*countries all over the Europe and Switzerland"
+  },
+  "Dispatchers": {
+    "kristofik": {
+      "name": "Roman Kristofik",
+      "position": "Logistics Manager",
+      "email": "romona.kristofik@al-expres.sk",
+      "phone": "+421 905 123 456"
+    },
+    "blanar": {
+      "name": "Peter Blanar",
+      "position": "Logistics Manager",
+      "email": "blanar@al-expres.sk",
+      "phone": "+421 905 123 456"
+    }
+  },
+  "Customers": {
+    "title": "Some of our customers"
+  },
+  "Contact": {
+    "title": "Contact us"
   }
 }

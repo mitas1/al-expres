@@ -6,8 +6,8 @@ interface DescriptionListProps {
 
 export const DescriptionList: FC<DescriptionListProps> = ({ groups }) => (
   <dl className="my-4 text-center md:text-left text-sm font-light leading-loose">
-    {groups.map((group) => (
-      <>
+    {groups.map((group, index) => (
+      <div key={index}>
         {group.map(([key, value]) => {
           return (
             <div key={key} className="inline text-xs">
@@ -20,8 +20,7 @@ export const DescriptionList: FC<DescriptionListProps> = ({ groups }) => (
             </div>
           );
         })}
-        <br />
-      </>
+      </div>
     ))}
   </dl>
 );

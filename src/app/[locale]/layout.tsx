@@ -4,6 +4,7 @@ import { FC, PropsWithChildren } from 'react';
 import { I18nConfig, Locale } from '@/i18n';
 import { getTranslations, unstable_setRequestLocale } from 'next-intl/server';
 import { Header } from '@/components/common/header/Header';
+import { ScrollProvider } from '@/scroll';
 
 const exo2 = Exo_2({
   subsets: ['latin'],
@@ -34,8 +35,10 @@ const RootLayout: FC<PropsWithChildren<PageParams>> = ({
   return (
     <html lang={locale}>
       <body className={exo2.className}>
-        <Header />
-        <main>{children}</main>
+        <ScrollProvider>
+          <Header />
+          <main>{children}</main>
+        </ScrollProvider>
       </body>
     </html>
   );

@@ -1,6 +1,6 @@
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
-import { H1 } from '../common/text/H1';
+import { ScrollButton } from '@/scroll';
 
 export const TruckHeroBanner = () => {
   const t = useTranslations('TruckHeroBanner');
@@ -14,13 +14,15 @@ export const TruckHeroBanner = () => {
         className="object-cover"
       />
       <div className="z-20 max-w-6xl w-full p-10">
-        <h1 className="text-white text-5xl md:max-w-sm text-left">{t('title')}</h1>
-        <a
-          href="#id"
+        <h1 className="text-white text-5xl md:max-w-sm text-left">
+          {t('title')}
+        </h1>
+        <ScrollButton
+          to="dispatchers"
           className="bg-black mt-8 inline-block text-white py-4 px-8 rounded hover:bg-white hover:text-black"
         >
           {t('contactLink')}
-        </a>
+        </ScrollButton>
       </div>
     </section>
   );

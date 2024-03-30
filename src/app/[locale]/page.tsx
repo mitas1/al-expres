@@ -7,17 +7,26 @@ import { TruckHeroBanner } from '@/components/index/TruckHeroBanner';
 import { unstable_setRequestLocale } from 'next-intl/server';
 import { FC } from 'react';
 import { PageParams } from './layout';
+import { ScrollSection } from '@/scroll/ScrollSection';
 
 const IndexPage: FC<PageParams> = ({ params: { locale } }) => {
   unstable_setRequestLocale(locale);
   return (
     <>
       <TruckHeroBanner />
-      <SemitrailerTypes />
+      <ScrollSection id="semitrailers">
+        <SemitrailerTypes />
+      </ScrollSection>
       <HighwayHeroBanner />
-      <Dispatchers />
-      <Customers />
-      <Contact />
+      <ScrollSection id="dispatchers">
+        <Dispatchers />
+      </ScrollSection>
+      <ScrollSection id="customers">
+        <Customers />
+      </ScrollSection>
+      <ScrollSection id="contact">
+        <Contact />
+      </ScrollSection>
     </>
   );
 };

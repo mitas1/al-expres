@@ -7,6 +7,7 @@ import { Flex } from '../common/layout/Flex';
 import Frigo from '@/images/semitrailer-frigo.svg';
 import Tent from '@/images/semitrailer-tent.svg';
 import { CircleIcon } from '../common/CircleIcon';
+import { ScrollButton } from '@/scroll';
 
 const Paragraph: FC<PropsWithChildren> = ({ children }) => <p>{children}</p>;
 
@@ -14,11 +15,17 @@ const H2: FC<PropsWithChildren> = ({ children }) => (
   <h2 className="text-3xl text-accent">{children}</h2>
 );
 
-const Link: FC<PropsWithChildren> = ({ children }) => (
-  <a href="#" className="bg-accent text-white rounded px-4 py-4">
-    More information
-  </a>
-);
+const InfoButton: FC<PropsWithChildren> = () => {
+  const t = useTranslations('Common');
+  return (
+    <ScrollButton
+      to="dispatchers"
+      className="bg-accent text-white rounded px-10 py-3"
+    >
+      {t('moreInfo')}
+    </ScrollButton>
+  );
+};
 
 const Column: FC<PropsWithChildren & { icon: ReactNode }> = ({
   icon,
@@ -68,7 +75,7 @@ export const SemitrailerTypes = () => {
               ]),
             )}
           />
-          <Link />
+          <InfoButton />
         </Column>
         <Column icon={<Tent width="50px" className="text-gray-500" />}>
           <H2>{t('tent.title')}</H2>
@@ -99,7 +106,7 @@ export const SemitrailerTypes = () => {
               ]),
             )}
           />
-          <Link />
+          <InfoButton />
         </Column>
       </Flex>
     </Section>

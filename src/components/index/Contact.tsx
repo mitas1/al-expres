@@ -25,6 +25,7 @@ const Item: FC<ItemProps> = ({ title, icon, description }) => (
 
 export const Contact: FC = () => {
   const t = useTranslations('Contact');
+
   return (
     <Section
       className="text-white bg-[url('/europe.jpeg')] bg-center bg-cover bg-no-repeat"

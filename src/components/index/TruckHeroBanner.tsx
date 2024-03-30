@@ -9,6 +9,7 @@ export const TruckHeroBanner = () => {
       <Image
         src="/truck.jpeg"
         alt="Truck"
+        quality={100}
         fill
         priority
         className="object-cover"

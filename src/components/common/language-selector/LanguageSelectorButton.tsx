@@ -44,7 +44,7 @@ export const LanguageSelector: FC<PropsWithChildren<LanguageSelectorProps>> = ({
       <DropdownMenu.Trigger asChild>
         <button
           type="button"
-          className="flex gap-2 items-center justify-center p-2 text-sm text-white outline-accent"
+          className="flex gap-2 items-center justify-center p-2 text-sm text-white"
         >
           {renderLanguageIcon(selectedLocale)}
           <span className="hidden md:block">

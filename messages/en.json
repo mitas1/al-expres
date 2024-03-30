@@ -12,7 +12,12 @@
     "en": "English",
     "sk": "Slovak",
     "de": "German",
-    "selectYourLanguage": "Select your language"
+    "selectYourLanguage": "Select your language",
+    "nav": {
+      "semitrailerTypes": "Semi-trailer types",
+      "customers": "Customers",
+      "dispatchers": "Dispatchers"
+    }
   },
   "TruckHeroBanner": {
     "title": "Transport all over Europe - Affordable and Reliable",

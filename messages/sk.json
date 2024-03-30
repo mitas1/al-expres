@@ -8,7 +8,11 @@
     "moreInfo": "More info",
     "dispatchers": "Place your trust in us!<br></br>Contact one of our dispatchers.",
     "email": "Email",
-    "phone": "Phone"
+    "phone": "Phone",
+    "en": "English",
+    "sk": "Slovak",
+    "de": "German",
+    "selectYourLanguage": "Select your language"
   },
   "TruckHeroBanner": {
     "title": "Transport all over Europe - Affordable and Reliable",

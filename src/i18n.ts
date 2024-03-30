@@ -2,7 +2,7 @@ import { notFound } from 'next/navigation';
 import { getRequestConfig } from 'next-intl/server';
 
 export const I18nConfig = {
-  locales: ['sk', 'en'],
+  locales: ['sk', 'en', 'de'],
   defaultLocale: 'sk',
   localePrefix: 'as-needed',
 } as const;

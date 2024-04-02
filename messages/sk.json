@@ -1,98 +1,98 @@
 {
   "Metadata": {
     "title": "AL expres",
-    "description": "We offer transport all over Europe"
+    "description": "Ponúkame prepravu v rámci celej Európy"
   },
   "Common": {
-    "contactUs": "Contact us",
-    "moreInfo": "More info",
-    "dispatchers": "Place your trust in us!<br></br>Contact one of our dispatchers.",
+    "contactUs": "Kontaktujte nás",
+    "moreInfo": "Viac informácií",
+    "dispatchers": "Dôverujte skúsenostiam!<br></br>Oslovte jedného z našich dispečerov.",
     "email": "Email",
-    "phone": "Phone",
+    "phone": "Tel. č.",
     "en": "English",
-    "sk": "Slovak",
-    "de": "German",
+    "sk": "Slovenčina",
+    "de": "Deutch",
     "selectYourLanguage": "Select your language",
     "nav": {
-      "home": "Home",
-      "semitrailerTypes": "Semi-trailer types",
-      "customers": "Customers",
-      "dispatchers": "Our team"
+      "home": "Úvodná stránka",
+      "semitrailerTypes": "Typy návesov",
+      "customers": "Zákazníci",
+      "dispatchers": "Náš tím"
     }
   },
   "TruckHeroBanner": {
-    "title": "Transport all over Europe - Affordable and Reliable",
-    "contactLink": "Contact our team"
+    "title": "Doprava po celej Európe – cenovo dostupná a spoľahlivá",
+    "contactLink": "Kontaktujte náš tím"
   },
   "SemitrailerTypes": {
-    "title": "Semi-trailer types",
+    "title": "Typy návesov",
     "frigo": {
-      "title": "Frigo Semi-trailers",
-      "paragraph1": "<bold>WE OFFER FRIGO SEMI-TRAILERS WITH TEMPERATURE CONTROL</bold> (IN THE RANGE -30°C TO +30°C) for the transport of any temperature-sensitive goods.",
-      "paragraph2": "<bold>Guarantee Freshness Across Europe:</bold> Our temperature-controlled frigo semi-trailers keep your goods at optimal conditions throughout their journey. Equipped with pallet baskets for easy loading and unloading, we ensure seamless transport with complete temperature monitoring via our vehicle thermographs.",
+      "title": "Frigo návesy",
+      "paragraph1": "<bold>PONÚKAME NÁVESY S MOŽNOSŤOU REGULÁCIE TEPLOTY</bold> (v rozsahu od -30°C do +30°C) na prepravu akéhokoľvek teplotne citlivého tovaru.",
+      "paragraph2": "Naše frigo návesy sú zárukou, že Váš tovar bude udržiavaný pri vhodnej teplote počas celého transportu. Návesy majú paletové koše (možná paletová výmena). Pri doručení tovaru predkladáme záznam priebehu teplôt z termografu vozidla.",
       "params": {
         "type": {
-          "label": "Type",
-          "value": "Frigo, temperature control (in the range -30°C to +30°C)"
+          "label": "Typ",
+          "value": "Frigo, regulácia teploty (od -30°C do +30°C)"
         },
         "load": {
-          "label": "Load",
+          "label": "Nosnosť",
           "value": "22.5 t"
         },
         "volume": {
-          "label": "Volume",
+          "label": "Objem",
           "value": "86.35 m<sup>3</sup>"
         },
         "dimensions": {
-          "label": "Dimensions",
+          "label": "Rozmery",
           "value": "13.6 × 2.48 × 2.7 m"
         },
         "palettes": {
-          "label": "Palettes",
-          "value": "33 pcs"
+          "label": "Palety",
+          "value": "33 ks"
         },
         "gps": {
           "label": "GPS monitoring",
-          "value": "yes"
+          "value": "áno"
         },
         "frc": {
-          "label": "FRC certification",
-          "value": "yes"
+          "label": "FRC certifikát",
+          "value": "áno"
         }
       }
     },
     "tent": {
-      "title": "Tent Semi-trailers",
-      "paragraph1": "<bold>WE OFFER TENT SEMITRAILERS WHICH MEET THE HIGHEST STANDARD IN THE SEGMENT</bold> of the security, safety of goods and quality.",
-      "paragraph2": "Our tent semitrailers are equipped with a triangular folding canvas, Multi-lock System / tents with XL code. Goods can be loaded from three sides - from the top, side and rear. We can send your goods to all European countries.",
+      "title": "Plachtové návesy",
+      "paragraph1": "<bold>PONÚKAME PLACHTOVÉ NÁVESY, KTORÉ SPĹŇAJÚ NAJVYŠŠIE ŠTANDARDY V SEGMENTE</bold> v oblasti bezpečnosti, ochrany tovaru a kvality.",
+      "paragraph2": "Naše plachtové návesy sú vybavené trojstrannou zhrňovacou plachtou, Multilock systémom / plachty s XL code. Tovar je možné nakladať z troch strán - zvrchu, zboku a zozadu. Váš tovar vieme dopraviť do všetkých krajín Európy.",
       "params": {
         "type": {
-          "label": "Type",
-          "value": "Tent Semitrailer"
+          "label": "Typ",
+          "value": "Plachtový náves"
         },
         "load": {
-          "label": "Load",
+          "label": "Nosnosť",
           "value": "24.0 t"
         },
         "volume": {
-          "label": "Volume",
+          "label": "Objem",
           "value": "92.75 m<sup>3</sup>"
         },
         "dimensions": {
-          "label": "Dimensions",
+          "label": "Rozmery",
           "value": "1360 × 248 × 275 cm"
         },
         "palettes": {
-          "label": "Palettes",
+          "label": "Palety",
           "value": "34 pcs"
         },
         "gps": {
           "label": "GPS monitoring",
-          "value": "yes"
+          "value": "áno"
         },
         "xlCode": {
           "label": "XL code",
-          "value": "yes"
+          "value": "áno"
         },
         "multiLock": {
           "label": "Multi-lock system",
@@ -102,40 +102,40 @@
     }
   },
   "HighwayHeroBanner": {
-    "title": "<accent>Your good</accent> will be safely delivered almost everywhere*",
-    "footnote": "*countries all over the Europe and Switzerland"
+    "title": "<accent>Váš tovar</accent> doručíme bezpečne kdekoľvek*",
+    "footnote": "*v rámci krajín Európy a Švajčiarska"
   },
   "Dispatchers": {
     "kristofik": {
-      "name": "Roman Kristofik",
-      "position": "Logistics Manager",
+      "name": "Roman Krištofík",
+      "position": "Vedúci logistiky",
       "email": "roman.kristofik@al-expres.sk",
       "phone": "+421 911 110 931"
     },
     "blanar": {
       "name": "Peter Blanar",
-      "position": "Dispatcher",
+      "position": "Dispečer",
       "email": "blanar.peter@al-expres.sk",
       "phone": "+421 903 208 359"
     },
     "noskovicova": {
       "name": "Ľudmila Noskovičová",
-      "position": "Accountant",
+      "position": "Účtovníčka",
       "email": "noskovicova@al-expres.sk",
       "phone": "+421 903 208 359"
     }
   },
   "Customers": {
-    "title": "Some of our customers"
+    "title": "Niektorí z našich klientov"
   },
   "Contact": {
-    "title": "Contact us",
+    "title": "Kontaktujte nás",
     "company": {
       "label": "AL expres s.r.o.",
       "value": "Koperníkova 14, 82104<br></br>Bratislava, Slovakia"
     },
     "ico": {
-      "label": "VAT number",
+      "label": "IČO",
       "value": "44 372 078"
     },
     "email": {
@@ -143,7 +143,7 @@
       "value": "transport@al-expres.sk"
     },
     "phone": {
-      "label": "Phone number",
+      "label": "Telefónne číslo",
       "value": "+421 911 110 931"
     },
     "copyright": "© {year} Al expres s.r.o. / All rights reserved / designed by Matus Mitas"

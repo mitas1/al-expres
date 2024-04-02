@@ -14,14 +14,15 @@
     "de": "German",
     "selectYourLanguage": "Select your language",
     "nav": {
+      "home": "Home",
       "semitrailerTypes": "Semi-trailer types",
       "customers": "Customers",
-      "dispatchers": "Dispatchers"
+      "dispatchers": "Our team"
     }
   },
   "TruckHeroBanner": {
     "title": "Transport all over Europe - Affordable and Reliable",
-    "contactLink": "Contact our Dispatchers"
+    "contactLink": "Contact our team"
   },
   "SemitrailerTypes": {
     "title": "Semi-trailer types",
@@ -115,6 +116,12 @@
       "name": "Peter Blanar",
       "position": "Dispatcher",
       "email": "blanar.peter@al-expres.sk",
+      "phone": "+421 903 208 359"
+    },
+    "noskovicova": {
+      "name": "Ľudmila Noskovičová",
+      "position": "Accountant",
+      "email": "noskovicova@al-expres.sk",
       "phone": "+421 903 208 359"
     }
   },

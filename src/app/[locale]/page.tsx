@@ -13,7 +13,9 @@ const IndexPage: FC<PageParams> = ({ params: { locale } }) => {
   unstable_setRequestLocale(locale);
   return (
     <>
-      <TruckHeroBanner />
+      <ScrollSection id="home">
+        <TruckHeroBanner />
+      </ScrollSection>
       <ScrollSection id="semitrailers">
         <SemitrailerTypes />
       </ScrollSection>

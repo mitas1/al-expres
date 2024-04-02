@@ -4,9 +4,12 @@ import AlExpresLogo from '@/images/al-expres.svg';
 import { ScrollButton } from '@/scroll';
 import { LanguageSelector } from '../language-selector/LanguageSelectorButton';
 import { Locale } from '@/i18n';
-import { FC, PropsWithChildren } from 'react';
 
-const navProps = { className: 'hidden md:flex text-white text-sm p-2' };
+const navProps = {
+  className:
+    'hidden md:flex text-white text-sm p-2 border-b-2 border-transparent hover:border-accent transition-colors duration-200',
+  activeClassName: '!border-accent',
+};
 
 export const Header = () => {
   const t = useTranslations('Common');
@@ -19,6 +22,9 @@ export const Header = () => {
       <div className="max-w-6xl w-full flex justify-between">
         <AlExpresLogo />
         <div className="flex items-center gap-6">
+          <ScrollButton to="home" {...navProps}>
+            {t('nav.home')}
+          </ScrollButton>
           <ScrollButton to="semitrailers" {...navProps}>
             {t('nav.semitrailerTypes')}
           </ScrollButton>

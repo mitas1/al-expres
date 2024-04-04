@@ -37,7 +37,7 @@ export const Dispatchers = () => {
                   </h2>
                   <span>{t(`${transKey}.position`)}</span>
                 </div>
-                <dl>
+                <dl className='flex flex-col gap-1'>
                   <div className="flex justify-center">
                     <dt className="after:content-[':'] after:pr-1">
                       {tCommon('email')}

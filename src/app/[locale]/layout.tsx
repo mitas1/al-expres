@@ -5,6 +5,7 @@ import { I18nConfig, Locale } from '@/i18n';
 import { getTranslations, unstable_setRequestLocale } from 'next-intl/server';
 import { Header } from '@/components/common/header/Header';
 import { ScrollProvider } from '@/scroll';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 const exo2 = Exo_2({
   subsets: ['latin'],
@@ -39,6 +40,7 @@ const RootLayout: FC<PropsWithChildren<PageParams>> = ({
           <Header />
           <main>{children}</main>
         </ScrollProvider>
+        <SpeedInsights />
       </body>
     </html>
   );

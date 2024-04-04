@@ -1,114 +1,114 @@
 {
   "Metadata": {
     "title": "AL expres",
-    "description": "We offer transport all over Europe"
+    "description": "Transport in ganz Europa – günstig und zuverlässig"
   },
   "Common": {
-    "contactUs": "Contact us",
-    "moreInfo": "More info",
-    "dispatchers": "Place your trust in us!<br></br>Contact one of our dispatchers.",
-    "email": "Email",
-    "phone": "Phone",
+    "contactUs": "Kontaktieren sie uns",
+    "moreInfo": "Mehr Info",
+    "dispatchers": "Vertraut den erfahrungen!<br></br>sprechen sie mit unserer disponenten.",
+    "email": "E-mail",
+    "phone": "Telefon",
     "en": "English",
-    "sk": "Slovak",
-    "de": "German",
-    "selectYourLanguage": "Select your language",
+    "sk": "Slovenčina",
+    "de": "Deutsch",
+    "selectYourLanguage": "Wähle deine Sprache",
     "nav": {
-      "home": "Home",
-      "semitrailerTypes": "Semi-trailer types",
-      "customers": "Customers",
-      "dispatchers": "Our team"
+      "home": "Heim",
+      "semitrailerTypes": "Typen Sattelauflieger",
+      "customers": "Kunden",
+      "dispatchers": "unser Team"
     }
   },
   "TruckHeroBanner": {
-    "title": "Transport all over Europe - Affordable and Reliable",
-    "contactLink": "Contact our team"
+    "title": "Transport in ganz Europa – günstig und zuverlässig",
+    "contactLink": "Kontaktieren Sie unser Team"
   },
   "SemitrailerTypes": {
-    "title": "Semi-trailer types",
+    "title": "Frigo Typen unserer Sattelauflieger",
     "frigo": {
-      "title": "Frigo Semi-trailers",
-      "paragraph1": "<bold>WE OFFER FRIGO SEMI-TRAILERS WITH TEMPERATURE CONTROL</bold> (IN THE RANGE -30°C TO +30°C) for the transport of any temperature-sensitive goods.",
-      "paragraph2": "<bold>Guarantee Freshness Across Europe:</bold> Our temperature-controlled frigo semi-trailers keep your goods at optimal conditions throughout their journey. Equipped with pallet baskets for easy loading and unloading, we ensure seamless transport with complete temperature monitoring via our vehicle thermographs.",
+      "title": "Frigo Sattelauflieger",
+      "paragraph1": "<bold>WIR TRANSPORTIEREN JEGLICHE ART VON PRODUKTEN,</bold> die gekühlt, tiefgekühlt oder frisch geliefert werden müssen. Temperierte Transporte (Temperaturbereich von -30°C bis +30°C) für sensibiles Frachtgut.",
+      "paragraph2": "Unsere Kühltrasport-Flotte ist eine Garantie, daß Ihr Frachtgut während Transport bei geeigneter Temperatur behandelt wird. Die Auflieger verfügen über Palettenkörbe (Palettenaustausch möglich). Es ist für uns selbstverständlich die Aufnahme vom Thermograf des Wagens einzureichen.",
       "params": {
         "type": {
-          "label": "Type",
-          "value": "Frigo, temperature control (in the range -30°C to +30°C)"
+          "label": "Typ",
+          "value": "Frigo, Temperaturbereich von -30°C bis +30°C"
         },
         "load": {
-          "label": "Load",
+          "label": "Trägkraft",
           "value": "22.5 t"
         },
         "volume": {
-          "label": "Volume",
+          "label": "Volumen",
           "value": "86.35 m<sup>3</sup>"
         },
         "dimensions": {
-          "label": "Dimensions",
+          "label": "Abmessung",
           "value": "13.6 × 2.48 × 2.7 m"
         },
         "palettes": {
-          "label": "Palettes",
-          "value": "33 pcs"
+          "label": "Paletten",
+          "value": "33 Stk"
         },
         "gps": {
           "label": "GPS monitoring",
-          "value": "yes"
+          "value": "Ja"
         },
         "frc": {
-          "label": "FRC certification",
-          "value": "yes"
+          "label": "FRC Zertifikat",
+          "value": "Ja"
         }
       }
     },
     "tent": {
-      "title": "Tent Semi-trailers",
-      "paragraph1": "<bold>WE OFFER TENT SEMITRAILERS WHICH MEET THE HIGHEST STANDARD IN THE SEGMENT</bold> of the security, safety of goods and quality.",
-      "paragraph2": "Our tent semitrailers are equipped with a triangular folding canvas, Multi-lock System / tents with XL code. Goods can be loaded from three sides - from the top, side and rear. We can send your goods to all European countries.",
+      "title": "Curtainsider Sattelauflieger",
+      "paragraph1": "<bold>WIR BIETEN DIE CURTAINSIDER-AUFLIEGER,</bold> die die höchsten standards im bereich sicherheit, Schutz und Qualität erfüllen.",
+      "paragraph2": "Unsere Curtainsider-Auflieger sind mit dreiseitiger Schiebeplane ausgerüstet, weiter verfügen sie über Multilock-System / Planen mit XL Code. Es ist möglich die Ware von drei Seiten zu laden – von oben, von der Seite und von hinten. Ihr Frachtgut können wir in alle Europaländer transportieren.",
       "params": {
         "type": {
-          "label": "Type",
-          "value": "Tent Semitrailer"
+          "label": "Typ",
+          "value": "Curtainsider-Auflieger"
         },
         "load": {
-          "label": "Load",
+          "label": "Trägkraft",
           "value": "24.0 t"
         },
         "volume": {
-          "label": "Volume",
+          "label": "Volumen",
           "value": "92.75 m<sup>3</sup>"
         },
         "dimensions": {
-          "label": "Dimensions",
+          "label": "Abmessung",
           "value": "1360 × 248 × 275 cm"
         },
         "palettes": {
-          "label": "Palettes",
-          "value": "34 pcs"
+          "label": "Paletten",
+          "value": "34 Stk"
         },
         "gps": {
           "label": "GPS monitoring",
-          "value": "yes"
+          "value": "Ja"
         },
         "xlCode": {
           "label": "XL code",
-          "value": "yes"
+          "value": "Ja"
         },
         "multiLock": {
           "label": "Multi-lock system",
-          "value": "yes"
+          "value": "Ja"
         }
       }
     }
   },
   "HighwayHeroBanner": {
-    "title": "<accent>Your good</accent> will be safely delivered almost everywhere*",
-    "footnote": "*countries all over the Europe and Switzerland"
+    "title": "<accent>Wir liefern</accent> ihre waren sicher überall*",
+    "footnote": "*in den Ländern der EU und der Schweiz"
   },
   "Dispatchers": {
     "kristofik": {
       "name": "Roman Kristofik",
-      "position": "Logistics Manager",
+      "position": "Logistik-Manager",
       "email": "roman.kristofik@al-expres.sk",
       "phone": "+421 911 110 931"
     },
@@ -120,22 +120,22 @@
     },
     "noskovicova": {
       "name": "Ľudmila Noskovičová",
-      "position": "Accountant",
+      "position": "Buchhalterin",
       "email": "noskovicova@al-expres.sk",
       "phone": "+421 903 208 359"
     }
   },
   "Customers": {
-    "title": "Some of our customers"
+    "title": "Einige von unseren Kunden"
   },
   "Contact": {
-    "title": "Contact us",
+    "title": "Kontaktiere uns",
     "company": {
       "label": "AL expres s.r.o.",
       "value": "Koperníkova 14, 82104<br></br>Bratislava, Slovakia"
     },
     "ico": {
-      "label": "VAT number",
+      "label": "Id. Nr. - Identifikationsnummer",
       "value": "44 372 078"
     },
     "email": {
@@ -143,7 +143,7 @@
       "value": "transport@al-expres.sk"
     },
     "phone": {
-      "label": "Phone number",
+      "label": "Telefonnummer",
       "value": "+421 911 110 931"
     },
     "copyright": "© {year} Al expres s.r.o. / All rights reserved / designed by Matus Mitas"

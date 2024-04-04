@@ -7,7 +7,7 @@
     "contactUs": "Contact us",
     "moreInfo": "More info",
     "dispatchers": "Place your trust in us!<br></br>Contact one of our dispatchers.",
-    "email": "Email",
+    "email": "E-mail",
     "phone": "Phone",
     "en": "English",
     "sk": "Slovenčina",
@@ -135,7 +135,7 @@
       "value": "Koperníkova 14, 82104<br></br>Bratislava, Slovakia"
     },
     "ico": {
-      "label": "VAT number",
+      "label": "Company registration number",
       "value": "44 372 078"
     },
     "email": {

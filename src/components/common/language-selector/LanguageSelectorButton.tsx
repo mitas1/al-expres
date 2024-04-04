@@ -13,6 +13,7 @@ import classNames from 'classnames';
 interface LanguageSelectorProps {
   selectedLocale: Locale;
   languageTranslations: Record<Locale, string>;
+  children: string;
 }
 
 const LanguageIcons: Record<Locale, ReactNode> = {
@@ -27,7 +28,7 @@ const renderLanguageIcon = (locale: Locale) => (
   </span>
 );
 
-export const LanguageSelector: FC<PropsWithChildren<LanguageSelectorProps>> = ({
+export const LanguageSelector: FC<LanguageSelectorProps> = ({
   selectedLocale,
   languageTranslations,
   children,
@@ -45,6 +46,7 @@ export const LanguageSelector: FC<PropsWithChildren<LanguageSelectorProps>> = ({
         <button
           type="button"
           className="flex gap-2 items-center justify-center p-2 text-sm text-white"
+          aria-label={children}
         >
           {renderLanguageIcon(selectedLocale)}
           <span className="hidden md:block">

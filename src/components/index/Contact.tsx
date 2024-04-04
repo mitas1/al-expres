@@ -57,7 +57,7 @@ export const Contact: FC = () => {
           }
         />
       </Flex>
-      <p className="text-center text-xs text-gray-500 mt-20">
+      <p className="text-center text-xs text-gray-500 mt-20 px-20">
         {t('copyright', { year: new Date().getFullYear() })}
       </p>
     </Section>

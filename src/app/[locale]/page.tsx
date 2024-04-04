@@ -8,6 +8,7 @@ import { unstable_setRequestLocale } from 'next-intl/server';
 import { FC } from 'react';
 import { PageParams } from './layout';
 import { ScrollSection } from '@/scroll/ScrollSection';
+import { PhotoWall } from '@/components/index/PhotoWall';
 
 const IndexPage: FC<PageParams> = ({ params: { locale } }) => {
   unstable_setRequestLocale(locale);
@@ -25,6 +26,7 @@ const IndexPage: FC<PageParams> = ({ params: { locale } }) => {
       </ScrollSection>
       <ScrollSection id="customers">
         <Customers />
+        <PhotoWall />
       </ScrollSection>
       <ScrollSection id="contact">
         <Contact />

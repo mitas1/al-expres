@@ -6,6 +6,7 @@ import { getTranslations, unstable_setRequestLocale } from 'next-intl/server';
 import { Header } from '@/components/common/header/Header';
 import { ScrollProvider } from '@/scroll';
 import { SpeedInsights } from '@vercel/speed-insights/next';
+import { Analytics } from '@vercel/analytics/react';
 
 const exo2 = Exo_2({
   subsets: ['latin'],
@@ -41,6 +42,7 @@ const RootLayout: FC<PropsWithChildren<PageParams>> = ({
           <main>{children}</main>
         </ScrollProvider>
         <SpeedInsights />
+        <Analytics />
       </body>
     </html>
   );
